@@ -50,7 +50,7 @@ int main(void) {
 	}
 	pinMode(7,OUTPUT);
 	digitalWrite(7,LOW);
-	pcs9685PWMReset(pwmhd);
+	pca9685PWMReset(pwmhd);
 	for (i=0;i<8;i++) {
 		pinMode(BASE_PWM+i,OUTPUT);
 	}
