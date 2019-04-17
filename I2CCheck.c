@@ -55,7 +55,7 @@ int main(void) {
 		pinMode(BASE_PWM+i,OUTPUT);
 	}
 	while(1==1) {
-		for (i=1;i<PWM_MAX;i++) {
+		for (i=1;i<MAX_PWM;i++) {
 			pwmWrite(BASE_PWM+2,i);
 			lcdPosition(lcdhd,0,0);
 			lcdPrintf(lcdhd,"Licht %i",i);
